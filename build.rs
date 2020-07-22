@@ -1,7 +1,6 @@
 use std::path::PathBuf;
 
 fn main() {
-	println!("cargo:rustc-link-lib=wxWidgets");
 	println!("cargo:rerun-if-changed=wrapper.hpp");
 
 	let cxx_flags = String::from("-std=c++14");
